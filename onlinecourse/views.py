@@ -60,6 +60,7 @@ def logout_request(request):
     return redirect('onlinecourse:index')
 
 
+# check if user is enrolled in a course
 def check_if_enrolled(user, course):
     is_enrolled = False
     if user.id is not None:
