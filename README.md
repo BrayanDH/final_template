@@ -30,13 +30,25 @@ To run the Online Courses App locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Start the development server:
+4. Apply database migrations(only the first time):
+
+   ```
+   python manage.py migrate
+   ```
+
+5. Create a superuser (Admin) to manage the app(only the first time):
+
+   ```
+   python manage.py createsuperuser
+   ```
+
+6. Start the development server:
 
    ```
    python manage.py runserver
    ```
 
-5. Open your web browser and visit http://localhost:8000 to access the Online Courses App.
+7. Open your web browser and visit http://localhost:8000 to access the Online Courses App.
 
 ## Dependencies
 
@@ -61,6 +73,7 @@ Contributions to the Online Courses App are welcome! Feel free to open issues or
 This project is licensed under the MIT License.
 
 ## Acknowledgments
- - Special thanks to the creators and maintainers of the libraries and frameworks used in this project.
+
+- Special thanks to the creators and maintainers of the libraries and frameworks used in this project.
 
 - this project belongs to the Developing Applications with SQL, Databases, and Django course in cursera and is the final test of this course.
