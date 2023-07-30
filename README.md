@@ -8,9 +8,39 @@ This project is an Online Courses App developed using Django, a popular web fram
 - Enroll in Courses: Users can enroll in courses they are interested in.
 - User Authentication: Secure user authentication to access enrolled courses and manage their account.
 
-## Getting Started
+## Installation and Setup
 
-To run the Online Courses App locally, follow these steps:
+Install Docker on your machine: [Docker Installation Guide ](https://docs.docker.com/engine/install/)
+
+- Clone this repository:
+
+  ```
+  git clone https://github.com/BrayanDH/online_courses_app_django.git
+  ```
+
+- Navigate to the project directory:
+
+  ```
+  cd online_courses_app_django
+  ```
+
+- Build the Docker container:
+
+  ```
+  docker build -t online_courses_app_django .
+  ```
+
+- Run the container:
+
+  ```
+  docker run -p 8080:8080 online_courses_app_django
+  ```
+
+- Open your web browser and visit http://localhost:8000/onlinecourse/ to access the Dealership Review App.
+
+To run the Todo App locally without docker, follow these steps:
+
+Install Python 3.8 on your machine: [Python Installation](https://www.python.org/downloads/)
 
 1. Clone this repository:
 
@@ -48,7 +78,7 @@ To run the Online Courses App locally, follow these steps:
    python manage.py runserver
    ```
 
-7. Open your web browser and visit http://localhost:8000 to access the Online Courses App.
+7. Open your web browser and visit http://localhost:8000/onlinecourse/ to access the Online Courses App.
 
 ## Dependencies
 
